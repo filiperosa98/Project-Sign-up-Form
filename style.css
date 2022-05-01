@@ -1,0 +1,148 @@
+body {
+    font-family: sans-serif;
+    background-color: rgb(234, 234, 234);
+}
+
+p {
+    text-align: left;
+    margin-top: 15px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#carpic {
+    background-image: url(/Images/car_photo.jpg);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 35vw;
+    height: 47vw;
+}
+
+/* Not Correct
+.left-side img {
+    width: 500px;
+    padding: 10px;
+    display: flex;
+    float: left;
+    width: 500px; 
+    height: 500px; 
+    object-fit: cover;
+} Not Correct */
+
+
+.left-side {
+    text-align: left;
+}
+
+.another {
+    text-align: center;
+}
+
+
+.right-side {
+    padding: 10px;
+    float: right;
+    align-self: right;
+}
+
+form {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding-top: 70px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+input {
+    width: 65%;
+    height: 25px;
+    flex-direction: column;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+}
+input:focus {
+    outline: none;
+    border-color: #e6fa2f;
+    box-shadow: 0 0 2px #ddff00;
+}
+.input {
+    margin-top: 7px;
+    margin-left: 70px;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: end;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: -moz-available;
+}
+
+button {
+    background: none;
+    border: none;
+    border-radius: 50px;
+    padding : 17px 30px 17px 30px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #575229;
+    color: white;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: -5px;
+    transition: background-color .1s ease-in;
+}
+button:hover {
+    background-color: #fcff36;
+}
+
+.description {
+    background-color: #f8f9fa;
+    font-size: larger;
+    font-weight: 400;
+    font-size: 25px;
+    padding: 15px 20px 20px 30px;
+    margin: auto;
+}
+
+.main {
+    display: flex;
+}
+
+@media (min-width:300px) and (max-width:800px){
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+ 
+    .right-side {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    img {
+        width: 80vw;
+        height: 75vh;
+    }
+    
+}
+@media (min-width:800px) and (max-width:1300px){
+    img {
+        width: 55vw;
+    } 
+}
